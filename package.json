@@ -1,4 +1,5 @@
-{
+{ 
+  "homepage": "https://krishanathep.github.io/react-movie-search/",
   "name": "react-movie-search",
   "version": "0.1.0",
   "private": true,

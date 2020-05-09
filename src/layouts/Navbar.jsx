@@ -8,7 +8,7 @@ export class Navbar extends Component {
         <nav class="navbar navbar-expand-lg bg-primary fixed-top">
           <div className="container">
           <Link to='/' className="navbar-brand">
-            <span>REACT</span> MOVIE SEARCH
+          <i class="fas fa-video"></i>&nbsp; <span>REACT</span> MOVIE SEARCH
           </Link>
           </div>
         </nav>

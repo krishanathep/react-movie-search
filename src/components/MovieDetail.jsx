@@ -36,7 +36,7 @@ export class MovieDetail extends Component {
               </div>
               <div className="col-md-6">
                 <div className="container">
-                  <h3 className="card-title mt-5">
+                  <h3 className="card-title mt-3">
                     {movie.detail.title}
                   </h3>
                   <p className="card-text text-muted"><i class="far fa-calendar-alt"></i>&nbsp; <Moment fromNow>{movie.detail.release_date}</Moment></p>
@@ -45,7 +45,8 @@ export class MovieDetail extends Component {
                   <span class="badge badge-info mt-3"><i class="fas fa-clock"></i> {movie.detail.runtime}</span>
                   <span class="badge badge-info mt-3 ml-2 mr-2"><i class="fas fa-globe"></i> {movie.detail.original_language}</span>
                   <p className="card-text mt-3">{movie.detail.overview}</p>
-                    <Link to='/' className='btn btn-primary btn-sm mt-4'><i class="fas fa-arrow-circle-left"></i>&nbsp; GO HOME</Link>
+                    <Link to='/' className='btn btn-primary btn-sm mt-5 mr-1'><i class="fas fa-arrow-circle-left"></i>&nbsp; GO TO HOME</Link>
+                    <a href={movie.detail.homepage} className='btn btn-success btn-sm mt-5' target="_blank">GO TO LINK&nbsp; <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
               </div>
             </div>
