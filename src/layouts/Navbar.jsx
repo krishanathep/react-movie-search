@@ -1,14 +1,15 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export class Navbar extends Component {
   render() {
     return (
       <div className="Navbar">
-        <nav class="navbar navbar-expand-lg bg-primary">
+        <nav class="navbar navbar-expand-lg bg-primary fixed-top">
           <div className="container">
-          <a href="" className="navbar-brand">
-            <span>MOVIE</span> SEARCH
-          </a>
+          <Link to='/' className="navbar-brand">
+            <span>REACT</span> MOVIE SEARCH
+          </Link>
           </div>
         </nav>
       </div>
