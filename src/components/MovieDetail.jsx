@@ -29,7 +29,7 @@ export class MovieDetail extends Component {
             <div className="row">
               <div className="col-md-6" align="center">
                 <img
-                  className="img-thumbnail"
+                  className="img-thumbnail mt-3 mb-3"
                   src={`https://image.tmdb.org/t/p/w300_and_h450_bestv2${movie.detail.poster_path}`}
                   alt=""
                 />
@@ -46,7 +46,7 @@ export class MovieDetail extends Component {
                   <span class="badge badge-info mt-3 ml-2 mr-2"><i class="fas fa-globe"></i> {movie.detail.original_language}</span>
                   <p className="card-text mt-3">{movie.detail.overview}</p>
                     <Link to='/' className='btn btn-primary btn-sm mt-5 mr-1'><i class="fas fa-arrow-circle-left"></i>&nbsp; GO TO HOME</Link>
-                    <a href={movie.detail.homepage} className='btn btn-success btn-sm mt-5' target="_blank">GO TO LINK&nbsp; <i class="fas fa-arrow-circle-right"></i></a>
+                    <a href={movie.detail.homepage} className='btn btn-success btn-sm mt-5' target="blank">GO TO LINK&nbsp; <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
               </div>
             </div>
